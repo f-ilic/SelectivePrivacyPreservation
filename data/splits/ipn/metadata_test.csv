@@ -1,0 +1,53 @@
+video,frames,label,Hand,Background,Illumination,People in Scene,Background Motion,Set
+1CM1_1_R_#217,3855,W,Right,Plain,Stable,Single,Static,test
+1CM1_1_R_#218,3656,W,Right,Plain,Stable,Single,Static,test
+1CM1_1_R_#219,3922,W,Right,Plain,Stable,Single,Static,test
+1CM1_1_R_#220,3890,W,Right,Plain,Stable,Single,Static,test
+1CM1_2_R_#221,3769,M,Right,Clutter,Stable,Single,Static,test
+1CM1_2_R_#222,3651,M,Right,Clutter,Stable,Single,Static,test
+1CM1_2_R_#223,3989,M,Right,Clutter,Stable,Single,Static,test
+1CM1_2_R_#224,3823,M,Right,Clutter,Stable,Single,Static,test
+1CM1_3_R_#225,4261,M,Right,Clutter ,Dark,Single,Static,test
+1CM1_3_R_#226,4795,M,Right,Clutter ,Dark,Single,Static,test
+1CM1_3_R_#227,5038,M,Right,Clutter ,Dark,Single,Static,test
+1CM1_3_R_#228,4176,M,Right,Clutter,Dark,Single,Static,test
+1CM42_15_R_#197,4124,W,Right,Clutter,Stable,Single,Static,test
+1CM42_15_R_#198,4465,W,Right,Clutter,Stable,Single,Static,test
+1CM42_15_R_#199,4243,W,Right,Clutter,Stable,Single,Static,test
+1CM42_15_R_#200,4583,W,Right,Clutter,Stable,Single,Static,test
+1CM42_30_R_#145,3760,M,Right,Clutter,Stable,Multi,Dynamic,test
+1CM42_30_R_#146,3754,M,Right,Plain,Stable,Single,Static,test
+1CM42_30_R_#147,3691,M,Right,Plain,Stable,Single,Static,test
+1CM42_30_R_#148,3672,M,Right,Plain,Stable,Single,Static,test
+1CM42_31_R_#129,4043,W,Right,Clutter,Stable,Single,Static,test
+1CM42_31_R_#130,4465,W,Right,Plain,Stable,Single,Static,test
+1CM42_31_R_#131,4226,W,Right,Plain,Stable,Single,Static,test
+1CM42_31_R_#132,4412,W,Right,Plain,Stable,Single,Static,test
+1CV12_12_R_#89,4395,W,Right,Clutter,Light,Multi,Dynamic,test
+1CV12_12_R_#90,4723,W,Right,Plain,Stable,Single,Static,test
+1CV12_12_R_#91,4465,W,Right,Clutter,Light,Single,Static,test
+1CV12_12_R_#92,4772,W,Right,Plain,Stable,Single,Static,test
+1CV12_15_R_#101,3623,M,Right,Clutter,Stable,Single,Static,test
+1CV12_15_R_#102,3743,M,Right,Clutter,Stable,Single,Static,test
+1CV12_15_R_#103,3634,M,Right,Plain,Stable,Single,Static,test
+1CV12_15_R_#104,4047,M,Right,Plain,Stable,Single,Static,test
+1CV12_21_R_#109,4776,W,Right,Plain,Stable,Single,Static,test
+1CV12_21_R_#110,4491,W,Right,Clutter,Light,Single,Dynamic,test
+1CV12_21_R_#111,4684,W,Right,Plain,Stable,Single,Static,test
+1CV12_21_R_#112,4853,W,Right,Plain,Stable,Single,Static,test
+4CM11_13_R_#29,3841,M,Right,Plain,Stable,Single,Dynamic,test
+4CM11_13_R_#30,3953,M,Right,Plain,Stable,Single,Static,test
+4CM11_13_R_#31,3945,M,Right,Plain,Stable,Single,Static,test
+4CM11_13_R_#32,3881,M,Right,Plain,Stable,Single,Static,test
+4CM11_18_R_#45,3664,M,Right,Plain,Stable,Single,Static,test
+4CM11_18_R_#46,3739,M,Right,Plain,Stable,Single,Static,test
+4CM11_18_R_#47,3691,M,Right,Plain,Stable,Single,Static,test
+4CM11_18_R_#48,3697,M,Right,Plain,Stable,Single,Static,test
+4CM11_20_R_#41,3746,M,Right,Plain,Stable,Single,Static,test
+4CM11_20_R_#42,3743,M,Right,Plain,Stable,Single,Static,test
+4CM11_20_R_#43,4005,M,Right,Plain,Stable,Single,Static,test
+4CM11_20_R_#44,4120,M,Right,Plain,Stable,Single,Static,test
+4CM11_24_L_#61,4026,M,Right,Clutter,Light,Multi,Dynamic,test
+4CM11_24_L_#62,3751,M,Right,Clutter,Light,Single,Dynamic,test
+4CM11_24_L_#63,4000,M,Right,Clutter,Light,Single,Static,test
+4CM11_24_L_#64,3920,M,Right,Clutter,Light,Single,Static,test

@@ -1,0 +1,303 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "--------------- DATASET AND DATALOADER VERIFICATION --------------- ",
+        },
+        {
+            "name": "Show IPN Dataloader",
+            "type": "python",
+            "request": "launch",
+            "program": "dataset/db_factory.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--datasetname",
+                "ipn",
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Show KTH Dataloader",
+            "type": "python",
+            "request": "launch",
+            "program": "dataset/db_factory.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--datasetname",
+                "kth",
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Show SBU Dataloader",
+            "type": "python",
+            "request": "launch",
+            "program": "dataset/db_factory.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--datasetname",
+                "sbu",
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "--------------- MOTION CONSISTENT NOISE --------------- ",
+        },
+        {
+            "name": "Genererate IPN Motion Consistent",
+            "type": "python",
+            "request": "launch",
+            "program": "afd/generate_ipn.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Genererate KTH Motion Consistent",
+            "type": "python",
+            "request": "launch",
+            "program": "afd/generate_kth.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Genererate SBU Motion Consistent",
+            "type": "python",
+            "request": "launch",
+            "program": "afd/generate_sbu.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "--------------- MASKS --------------- ",
+        },
+        {
+            "name": "Masks for IPN",
+            "type": "python",
+            "request": "launch",
+            "program": "yolo/create_masks_ipn_or_kth.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--src",
+                "data/ipn",
+                "--dst",
+                "data/ipn_masks"
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Masks for KTH",
+            "type": "python",
+            "request": "launch",
+            "program": "yolo/create_masks_ipn_or_kth.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--src",
+                "data/kth",
+                "--dst",
+                "data/kth_masks"
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Masks for SBU",
+            "type": "python",
+            "request": "launch",
+            "program": "yolo/create_masks_sbu.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--src",
+                "data/sbu",
+                "--dst",
+                "data/sbu_masks"
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "--------------- SEMANTIC DINO-ViT FEATURES --------------- ",
+        },
+        {
+            "name": "Create Template Descriptor From Image",
+            "type": "python",
+            "request": "launch",
+            "program": "matcher/save_descriptor.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "-template",
+                "matcher/input/ipn1.jpg",
+                "-descriptorname",
+                "mouth.pt"
+            ],
+            "env": {
+                "PYTHONPATH": "${cwd}",
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        {
+            "name": "Show Example Saliency",
+            "type": "python",
+            "request": "launch",
+            "program": "visualize_qualitative/similarity_from_tempate_vis.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--image",
+                "matcher/input/ipn2.jpg",
+                "--descriptor",
+                "output/descriptors/hair.pt"
+            ],
+        ],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "Compute Saliency for IPN",
+        "type": "python",
+        "request": "launch",
+        "program": "matcher/similarity_from_template_for_dataset.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [
+            "-descriptorpath",
+            "output/descriptors/mouth.pt",
+            "--dataset",
+            "ipn"
+        ],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "Compute Saliency for KTH",
+        "type": "python",
+        "request": "launch",
+        "program": "matcher/similarity_from_template_for_dataset.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [
+            "-descriptorpath",
+            "output/descriptors/mouth.pt",
+            "--dataset",
+            "kth"
+        ],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "Compute Saliency for SBU",
+        "type": "python",
+        "request": "launch",
+        "program": "matcher/similarity_from_template_for_dataset.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [
+            "-descriptorpath",
+            "output/descriptors/mouth.pt",
+            "--dataset",
+            "sbu"
+        ],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "--------------- METHDOS --------------- ",
+    },
+    {
+        "name": "Show Quantitative Baselines",
+        "type": "python",
+        "request": "launch",
+        "program": "visualize_qualitative/baselines_qualitative_vis.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "Train Multiple Methods",
+        "type": "python",
+        "request": "launch",
+        "program": "batch_train.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+    {
+        "name": "Evaluate Multiple Methods",
+        "type": "python",
+        "request": "launch",
+        "program": "batch_eval.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "args": [],
+        "env": {
+            "PYTHONPATH": "${cwd}",
+            "CUDA_VISIBLE_DEVICES": "0"
+        }
+    },
+],
+}

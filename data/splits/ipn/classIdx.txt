@@ -1,0 +1,15 @@
+id,label,readable
+1,D0X,Non_gesture
+2,B0A,Pointing_1_finger
+3,B0B,Pointing_2_fingers
+4,G01,Click_1_finger
+5,G02,Click_2_fingers
+6,G03,Throw_up
+7,G04,Throw_down
+8,G05,Throw_left
+9,G06,Throw_right
+10,G07,Open_twice
+11,G08,Double_1_finger
+12,G09,Double_2_fingers
+13,G10,Zoom_in
+14,G11,Zoom_out
