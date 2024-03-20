@@ -7,7 +7,7 @@ Filip Ilic, He Zhao, Thomas Pock, Richard P. Wildes<br>
 ---
 
 [[Project Page]](https://f-ilic.github.io/SelectivePrivacyPreservation)
-[[Paper]](TODO)
+[[Paper]](https://arxiv.org/pdf/2403.12710.pdf)
 
 ![here](readme_assets/teaser.png)
 
